@@ -2,19 +2,17 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="logo.png" alt="Logo" width="80" height="80">
+    <img src="icon.png" alt="Logo" width="100" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">BlueUSB</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Fake Blue Screen of Death because, why not?
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
@@ -41,58 +39,70 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+BlueUSB is an opensource tool to generate fake BSoDs, probably as an evil prank. It supports **Windows Only** and only tested on Windows. A list of features:
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue with the tag.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+* Autodetects the Windows version and displays the correct type of BSoD
+* Suspends as much running processes as possible to give a good illusion - quite evil.
+  * If you don't like the sound of that, it also has nice mode which disables this.
+* "Nice mode" which disables suspending processes and also has a timer to remove the BSoD
+* Force a specific type of Windows Version
+  * You can have a Windows 10 blue screen on a Windows 8.1 computer if you wanted to
+* Windows 7, Windows 8/8.1 and Windows 10 have their own BSoDs
+* Windows 10 allows for a customm "return code".
+* Easy-to-use generator that generates the file as an EXE.
+* Export exe directly to the USB drive, or just keep it as a folder
+  * Automatically executes the BSoD right when its plugged in
+  * Or take the exe and use it however you want
+* Quite lightweight - if you use the Python ZIP/RAR
+  * The generator is only 39kb, and the output is only *7kb*
+  * The exe generator will be quite massive, and .rar is better.
+* Free minecraft account inside
+  * *(jk no)*
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
-
+BlueUSB is built with stuff
+* [Python](https://www.python.org/)
+* [Qt](https://www.qt.io/)
+* [PyQt](https://pypi.org/project/PyQt5/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+There are 2 editions - Python & EXE. Python has the raw code in it and it's smaller. EXE is compiled but larger.
+Choose a specfic edition and follow.
 
-### Prerequisites
+<details>
+  <summary>Python (rar/zip)</summary>
+  
+  ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+  This is an example of how to list things you need to use the software and how to      install them.
+  * npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-### Installation
+  ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https:://github.com/your_username_/Project-Name.git
-```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
+  1. Get a free API Key at [https://example.com](https://example.com)
+  2. Clone the repo
+  ```sh
+  git clone https:://github.com/your_username_/Project-Name.git
+  ```
+  3. Install NPM packages
+  ```sh
+  npm install
+  ```
+  4. Enter your API in `config.js`
+  ```JS
+  const API_KEY = 'ENTER YOUR API';
+  ```
+    ```
+</details>
+
+
 
 
 
